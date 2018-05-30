@@ -12,13 +12,13 @@ const App = (props) => {
     <Router>
       <div>
         <NavBar />
-        <Router path="/" component={Home} exact />
-        <Router path="/actors" component={Actors} />
-        <Router path="/directors" component={Directors} />
-        <Router path="/movies" component={Movies} />
+        <Route path="/" component={Home} exact />
+        <Route path="/actors" component={Actors} />
+        <Route path="/directors" component={Directors} />
+        <Route path="/movies" component={Movies} />
       </div>
     </Router>
   );
 };
 
-export default App
+export default App;
